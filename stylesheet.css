@@ -1,0 +1,117 @@
+body {
+	background-color: #536878;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#title {
+	text-align: center;
+	font-size: 64px;
+	text-shadow: 2px 2px #536872;
+}
+
+#container {
+	max-width: 800px;
+	margin: auto;
+}
+
+#main {
+	padding: 35px;
+}
+
+#navbar {
+	height: 50px;
+	background-color: #36454f;
+	margin: auto;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#navbar-list {
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
+  margin: 0px 0px;
+}
+
+#logo {
+	width: 32px;
+	filter: brightness(0) invert(1);
+}
+
+#stl_cont {
+	height: 80vh;
+	background-color: white;
+}
+
+li {
+  float: left;
+}
+
+.navbar-link, .navbar-link:visited, .navbar-link:hover, .navbar-link:active {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin: 0px 5px;
+}
+
+.navbar-link:hover {
+	font-weight: 900;
+}
+
+
+.button {
+	min-width: 30px;
+	padding: 10px;
+	min-height: 30px;
+	background-color: #536872;
+	width: fit-content;
+	text-align: center;
+	border-radius: 5px;
+	border: 2px solid white;
+	outline: 3px solid #536872;
+}
+
+.button:hover {
+	border: 3px solid white;
+	outline: 2px solid #536872;
+}
+
+.button-link, .button-link:visited, .button-link:hover, .button-link:active {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin: 0px 5px;
+  width: fit-content;
+  margin: 10px;
+}
+
+.search {
+  background-color: white;
+  width: 100%;
+  min-height: 200px;
+  margin: 20px 0px; 
+  border-radius: 10px;
+}
+
+.search-table {
+  width: 100%;
+  color: black;
+  table-layout: fixed;
+}
+
+td {
+	text-align: center;
+}
+
+.table-entry, .table-entry:visited, .table-entry:hover, .table-entry:active {
+	color: inherit;
+	display: block;
+	text-decoration: none;
+}
