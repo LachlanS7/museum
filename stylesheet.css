@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+
 body {
 	background-color: #536878;
 	color: white;
 	margin: 0px;
 	padding: 0px;
+	font-family: Prompt;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: "Baloo Paaji 2";
+	font-weight: 800;
+	font-size: 64px;
+}
+
+h2 {
+	font-family: "Baloo Paaji 2";
+	font-weight: 700;
+	font-size: 56px;
+}
+
+
+h3 {
+	font-family: "Harmattan";
+	font-weight: 700;
+	font-size: 56px;
+}
+
+h4 {
+	font-family: "Harmattan";
+	font-weight: 600;
+	font-size: 48px;
+	margin-top: 30px;
+	margin-bottom: 5px;
 }
 
 #title {
@@ -14,6 +47,15 @@ body {
 #container {
 	max-width: 800px;
 	margin: auto;
+}
+
+#container2 {
+	widht: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 #main {
@@ -30,10 +72,20 @@ body {
 }
 
 #navbar-list {
+	-webkit-box-align: left!important;
+	-ms-flex-align: left!important;
+	align-items: center!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: left!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   height: 100%;
   margin: 0px 0px;
+  padding: 0px;
 }
 
 #logo {
@@ -56,11 +108,10 @@ li {
   font-weight: 600;
   text-align: center;
   display: block;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 
 .navbar-link:hover {
-	font-weight: 900;
 }
 
 
@@ -77,8 +128,7 @@ li {
 }
 
 .button:hover {
-	border: 3px solid white;
-	outline: 2px solid #536872;
+	outline: 2px solid white;
 }
 
 .button-link, .button-link:visited, .button-link:hover, .button-link:active {
