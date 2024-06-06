@@ -21,6 +21,7 @@ h2 {
 	font-family: "Baloo Paaji 2";
 	font-weight: 700;
 	font-size: 56px;
+	margin-bottom: 10px;
 }
 
 
@@ -28,6 +29,7 @@ h3 {
 	font-family: "Harmattan";
 	font-weight: 700;
 	font-size: 56px;
+	margin-bottom: 10px;
 }
 
 h4 {
@@ -96,6 +98,7 @@ h4 {
 #stl_cont {
 	height: 80vh;
 	background-color: white;
+	float: left;
 }
 
 li {
