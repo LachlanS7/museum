@@ -4,13 +4,12 @@ data = JSON.parse(decodeURIComponent(data))
 console.log(data)
 
 
-//var title = document.getElementById("title")
-//var description = document.getElementById("description")
-//description.innerHTML = data.itemDescription
-//title.innerHTML = data.itemLabel
+var title = document.getElementById("objectName")
+var description = document.getElementById("description")
+description.innerText = data.itemDescription
+title.innerText = data.itemLabel
 var img = document.getElementById("image")
 var loading = document.getElementById("loadingProgress")
-console.log(loading)
 img.src = data.pic
 var stl_viewer = new StlViewer(document.getElementById("stl_cont"), {models: [{id:0, filename: `https://cors-anywhere.herokuapp.com/${data.model}`}], 
 	canvas_width: "8cm", 

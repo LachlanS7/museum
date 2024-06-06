@@ -55,8 +55,14 @@ async function loadObjects(path) {
         row += `<td><a class="table-entry" href="${link}">${i}</a></td>`
         row += `<td><a class="table-entry" href="${link}"><img src="${obj.thumb}" style="max-height: 64px; max-width: 128px;"></a></td>`
         row += `<td style="text-align: left;"><a class="table-entry" href="${link}">${obj.itemLabel}<br>${obj.itemDescription}</a></td>`
-        row += `<td><a class="table-entry" href="${link}">Yes</a></td>`
-        row += `<td><a class="table-entry" href="${link}">No</a></td>`
+        if (obj['RTI'] != null) {
+            row += `<td><a class="table-entry" href="${link}">No</a></td>`
+            row += `<td><a class="table-entry" href="${link}">Yes</a></td>`
+        }
+        else {
+            row += `<td><a class="table-entry" href="${link}">Yes</a></td>`
+            row += `<td><a class="table-entry" href="${link}">No</a></td>`
+        }
         row += `</tr>`
 
         table.innerHTML += row;
