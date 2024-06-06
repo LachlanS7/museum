@@ -15,9 +15,11 @@
     </ul> 
   </div>
   <div class="outerContainer" style="margin: 2cm; gap: 1em;">
-    <div class="column">
+    <div class="column" style="min-width: 10cm;">
       <div id="images" style="min-width: 5cm; max-width: 10cm;">
-        <div id="stl_cont" style="width: 100%; max-width: 12cm; display: none;"></div>
+        <div id="stl_cont" style="width: 100%; max-width: 12cm; display: none; position: relative;">
+          <div id="loadingProgress" style="position: absolute; z-index: 99; color: red; left: 50%; top: 50%; transform: translate(-50%, -50%);">Loading 3D model</div>
+        </div>
         <img id="image" src="" style="max-width: 100%; max-height: 100%; display: block;">
       </div>
     </div>

@@ -102,6 +102,11 @@ h4 {
 	background-color: white;
 }
 
+#stl_cout > canvas {
+	width: 100% !important;
+}
+
+
 li {
   float: left;
 }

@@ -9,11 +9,14 @@ console.log(data)
 //description.innerHTML = data.itemDescription
 //title.innerHTML = data.itemLabel
 var img = document.getElementById("image")
+var loading = document.getElementById("loadingProgress")
+console.log(loading)
 img.src = data.pic
-var stl_viewer = new StlViewer(document.getElementById("stl_cont"), {models: [{id:0, filename: `${data.model}?origin=*`}]}); 
-// = data.itemLabel
-//${data.model}?origin=*
-//Here you may write your code, after this document.load will fire
+var stl_viewer = new StlViewer(document.getElementById("stl_cont"), {models: [{id:0, filename: `test.stl`}], 
+	canvas_width: "8cm", 
+	all_loaded_callback: ()=>{ loading.style.display = 'None' },
+	loading_progress_callback: (status,session)=>{loading.innerText = status[0].loaded / status[0].total}
+}); 
 
 function switchImage() {
 	var oldIndex = 0;
