@@ -118,7 +118,7 @@ li {
 .button {
 	min-width: 30px;
 	padding: 10px;
-	min-height: 30px;
+	min-height: 20px;
 	background-color: #536872;
 	width: fit-content;
 	text-align: center;
