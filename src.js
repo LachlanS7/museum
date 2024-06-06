@@ -26,8 +26,10 @@ async function loadObjects(path) {
         page = 0
     }
 
-    console.log(page)
 
+    var pageCounter = document.getElementById("page-counter")
+    console.log(pageCounter)
+    pageCounter.innerHTML = page + 1
     var lower = 10 * page
     var upper = lower + 10 < objs.length ? lower + 10 : objs.length
 
