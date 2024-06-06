@@ -12,7 +12,7 @@ var img = document.getElementById("image")
 var loading = document.getElementById("loadingProgress")
 console.log(loading)
 img.src = data.pic
-var stl_viewer = new StlViewer(document.getElementById("stl_cont"), {models: [{id:0, filename: `test.stl`}], 
+var stl_viewer = new StlViewer(document.getElementById("stl_cont"), {models: [{id:0, filename: `${data.model}`}], 
 	canvas_width: "8cm", 
 	all_loaded_callback: ()=>{ loading.style.display = 'None' },
 	loading_progress_callback: (status,session)=>{loading.innerText = status[0].loaded / status[0].total}
